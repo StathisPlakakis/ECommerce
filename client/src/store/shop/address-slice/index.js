@@ -10,7 +10,7 @@ export const addNewAddress = createAsyncThunk(
   "/addresses/addNewAddress",
   async (formData) => {
     const response = await axios.post(
-      "http://ecommerce-px2q.onrender.com:8000/api/shop/address/add",
+      "https://ecommerce-px2q.onrender.com/api/shop/address/add",
       formData
     );
     console.log(response.data.message, "response.data.message");
@@ -22,7 +22,7 @@ export const fetchAllAddresses = createAsyncThunk(
   "/addresses/fetchAllAddresses",
   async (userId) => {
     const response = await axios.get(
-      `http://ecommerce-px2q.onrender.com:8000/api/shop/address/get/${userId}`
+      `https://ecommerce-px2q.onrender.com/api/shop/address/get/${userId}`
     );
 
     return response.data;
@@ -33,7 +33,7 @@ export const editaAddress = createAsyncThunk(
   "/addresses/editaAddress",
   async ({ userId, addressId, formData }) => {
     const response = await axios.put(
-      `http://ecommerce-px2q.onrender.com:8000/api/shop/address/update/${userId}/${addressId}`,
+      `https://ecommerce-px2q.onrender.com/api/shop/address/update/${userId}/${addressId}`,
       formData
     );
 
@@ -45,7 +45,7 @@ export const deleteAddress = createAsyncThunk(
   "/addresses/deleteAddress",
   async ({ userId, addressId }) => {
     const response = await axios.delete(
-      `http://ecommerce-px2q.onrender.com:8000/api/shop/address/delete/${userId}/${addressId}`
+      `https://ecommerce-px2q.onrender.com/api/shop/address/delete/${userId}/${addressId}`
     );
 
     return response.data;

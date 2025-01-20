@@ -73,12 +73,12 @@ const authSlice = createSlice({
 
 export const registerUser = createAsyncThunk('auth/registerUser',
   async (formData) => {
-    const response = await axios.post('http://ecommerce-px2q.onrender.com:8000/api/auth/register', formData, { withCredentials: true });
+    const response = await axios.post('https://ecommerce-px2q.onrender.com/api/auth/register', formData, { withCredentials: true });
     return response.data;
   })
 
 export const loginUser = createAsyncThunk('auth/loginUser', async (formData) => {
-  const response = await axios.post('http://ecommerce-px2q.onrender.com:8000/api/auth/login', formData, { withCredentials: true });
+  const response = await axios.post('https://ecommerce-px2q.onrender.com/api/auth/login', formData, { withCredentials: true });
   return response.data;
 })
 
@@ -86,7 +86,7 @@ export const logoutUser = createAsyncThunk(
   "/auth/logoutUser",
 
   async () => {
-    const response = await axios.post("http://ecommerce-px2q.onrender.com:8000/api/auth/logout",
+    const response = await axios.post("https://ecommerce-px2q.onrender.com/api/auth/logout",
       {},
       { withCredentials: true });
     return response.data;
@@ -94,7 +94,7 @@ export const logoutUser = createAsyncThunk(
 );
 
 export const checkAuth = createAsyncThunk('auth/checkAuth', async () => {
-  const response = await axios.get('http://ecommerce-px2q.onrender.com:8000/api/auth/check-auth', {
+  const response = await axios.get('https://ecommerce-px2q.onrender.com/api/auth/check-auth', {
     withCredentials: true,
     headers: {
       "Cache-Control":
