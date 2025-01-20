@@ -6,8 +6,9 @@ This is a full-stack E-commerce application built to demonstrate fundamental kno
 
 Check out the live application here: [E-Commerce App](https://ecommerce-px2q.onrender.com/shop/home)
 
-(P.S. 1.0.0 App Sleeping.It may take a small amount of time for the service to spin up again on the first request,commonly known as "cold boot time".)
-(P.S. 2.0.0 If you want to check admin functionality connect with the following credentials : (Email: 1@1, Password: 1).)
+- **P.S. 1** App Sleeping.It may take a small amount of time for the service to spin up again on the first request,commonly known as "cold boot time".
+  
+- **P.S. 2** If you want to check admin functionality connect with the following credentials : (Email: 1@1, Password: 1).
 
 ## 📖 Features
 
